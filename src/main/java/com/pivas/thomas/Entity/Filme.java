@@ -3,7 +3,7 @@ package com.pivas.thomas.Entity;
 import jakarta.persistence.*;
 import java.util.UUID;
 
-@Entity(name = "filmes")
+@Entity
 @Table(name="filmes")
 public class Filme {
 
