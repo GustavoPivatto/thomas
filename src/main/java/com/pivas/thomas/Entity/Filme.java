@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import java.util.UUID;
 
 @Entity
-@Table(name="filmes")
+@Table(name="filme")
 public class Filme {
 
     @Id
