@@ -8,7 +8,6 @@ import java.util.UUID;
 public class Filme {
 
     @Id
-    @GeneratedValue(generator = "UUID")
     private UUID id;
     private String filme_id;
     private String titulo;
