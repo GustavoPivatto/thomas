@@ -3,11 +3,12 @@ package com.pivas.thomas.Entity;
 import jakarta.persistence.*;
 import java.util.UUID;
 
-@Entity
+@Entity(name = "filmes")
+@Table(name="filmes")
 public class Filme {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private UUID id;
     private String filme_id;
     private String titulo;
