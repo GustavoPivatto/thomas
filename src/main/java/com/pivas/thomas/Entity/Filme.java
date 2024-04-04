@@ -4,11 +4,11 @@ import jakarta.persistence.*;
 import java.util.UUID;
 
 @Entity
-@Table(name="filme")
+@Table (name="filmes")
 public class Filme {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "UUID")
     private UUID id;
     private String filme_id;
     private String titulo;
