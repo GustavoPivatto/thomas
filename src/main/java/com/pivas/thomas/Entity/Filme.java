@@ -8,6 +8,7 @@ import java.util.UUID;
 public class Filme {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private UUID id;
     private String filme_id;
     private String titulo;
