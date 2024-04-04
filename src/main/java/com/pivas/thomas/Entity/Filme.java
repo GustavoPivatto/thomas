@@ -1,25 +1,25 @@
 package com.pivas.thomas.Entity;
 
 import jakarta.persistence.*;
-import java.util.UUID;
+// import java.util.UUID;
 
 @Entity(name = "filmes")
 public class Filme {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID id;
+    private Long id;
     private String filme_id;
     private String titulo;
     private String diretor;
     private int ano_lancamento;
     private String pais;
     
-public UUID getId() {
+public Long getId() {
         return id;
     }
 
-public void setId(UUID id) {
+public void setId(Long id) {
     this.id = id;
     }
 public String getTitulo() {
