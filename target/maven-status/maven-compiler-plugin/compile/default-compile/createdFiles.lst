@@ -1,2 +1,6 @@
+com\pivas\thomas\Controller\FilmeController$ResourceNotFoundException.class
 com\pivas\Main.class
+com\pivas\thomas\Controller\FilmeController.class
+com\pivas\thomas\Entity\Filme.class
 com\pivas\thomas\ThomasApplication.class
+com\pivas\thomas\Repository\FilmeRepository.class
