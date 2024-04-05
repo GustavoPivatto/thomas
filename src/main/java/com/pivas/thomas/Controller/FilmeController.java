@@ -45,7 +45,7 @@ public class FilmeController {
     }
 
     @PutMapping("/{id}")
-    public Filme updateFilme(@PathVariable("id") UUID id, @RequestBody Filme updatedFilme) {
+    public Filme updateFilme(@PathVariable("id") Long id, @RequestBody Filme updatedFilme) {
         Filme existingFilme = repository.findById(id).get();
         if (existingFilme != null) {
             // Update fields of existingFilme with values from updatedFilme
@@ -65,14 +65,14 @@ public class FilmeController {
     }
     
     @GetMapping("/{id}")
-    public Filme findFilmeById(@PathVariable("id") UUID id) {
+    public Filme findFilmeById(@PathVariable("id") Long id) {
         return repository.findById(id).get();
     }
     
     // Delete filme by UUID
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteFilmeById(@PathVariable("id") UUID id) {
+    public void deleteFilmeById(@PathVariable("id") Long id) {
         Filme existingFilme = repository.findById(id).get();
         if (existingFilme != null) {
             repository.delete(existingFilme);
